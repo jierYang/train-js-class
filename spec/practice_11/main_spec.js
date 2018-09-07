@@ -117,7 +117,6 @@ describe("Class", () => {
         it("should assign student as Leader, given student is class member", () => {
             const klass = new Class(2);
             const student = new Student(1, "Jerry", 21, klass);
-
             klass.assignLeader(student);
 
             expect(klass.leader).to.equal(student);
